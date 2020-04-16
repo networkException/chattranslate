@@ -1,0 +1,14 @@
+{
+    "required": true,
+    "package": "de.nwex.translate.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "mixins": [
+        "MixinClientPlayNetworkHandler",
+        "MixinCommandSuggestor",
+        "MixinTextFieldWidget",
+        "MixinClientPlayerEntity"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

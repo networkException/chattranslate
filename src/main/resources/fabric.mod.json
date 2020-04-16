@@ -1,0 +1,36 @@
+{
+    "schemaVersion": 1,
+    "id": "chattranslate",
+    "name": "chatTranslate",
+    "description": "Translate chat messages",
+    "version": "${version}",
+    "environment": "client",
+    "license": "MIT",
+    "icon": "assets/translate/icon.png",
+    "contact": {
+        "homepage": "https://nwex.de/",
+        "issues": "https://github.com/networkexception/chattranslate/issues"
+    },
+    "authors": [
+        "networkException"
+    ],
+    "contributors": [
+        "cortex",
+        "Earthcomputer"
+    ],
+    "entrypoints": {
+        "client": [
+            "de.nwex.translate.ChatTranslate"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.4.0",
+        "fabric": "*"
+    },
+    "mixins": [
+        "mixins.translate.json"
+    ],
+    "custom": {
+        "modmenu:clientsideOnly": true
+    }
+}
